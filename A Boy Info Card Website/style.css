@@ -12,8 +12,8 @@ body{
     background-color: white;
     border: 1px solid rgb(170, 170, 170);
     border-radius: 15px;
-    height: 60vh;
-    width: 18vw;
+    height: 35rem;
+    width: 21.6rem;
     margin: auto;
     margin-top: 100px;
     box-shadow: gray 6px 6px 6px;
@@ -24,11 +24,11 @@ body{
     display: block;
     margin: auto;
     margin-top: 9px;
-    width: 17vw;
+    width: 20.4em;
 }
 
 #primary-data{
-    width: 16vw;
+    width: 19.2em;
     margin: 20px auto;
 }
 
@@ -41,8 +41,8 @@ body{
 }
 
 #secondary-data{
-    width: 16vw;
-    height: 30vh;
+    width: 19.2em;
+    height: 16em;
     margin: auto;
 }
 
@@ -64,8 +64,8 @@ p{
     border: 1px solid lightblue;
     border-radius: 20px;
     display: block;
-    width: 6vw;
+    width: 9em;
     padding: 3.5% 5%;
-    margin: 2rem auto;
+    margin: 2.5em auto;
     font-weight: 600;
 }
