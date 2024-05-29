@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car's Showroom Website Registration Page</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+    <header class="header">
+        <div id="logo">
+            <img src="RaDiN's Car-logo-white.png" alt="">
+        </div>
+        <div id="navigation">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">Cars </a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#sent" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="button">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to our showroom</h1>
+        <form action="form.php">
+            <label for="Name" class="Name">Name:</label>
+            <div class="form-group">
+                <input type="text" name="My Name" id="Name" placeholder="Enter your name">
+            </div>
+            <label for="Email" class="Email">Email:</label>
+            <div class="form-group">
+                <input type="text" name="My Email" id="Email" placeholder="Enter your Email">
+            </div>
+            <label for="Password" class="Password">Password:</label>
+            <div class="form-group">
+                <input type="text" name="My Passward" id="Password" placeholder="Enter your Passward">
+            </div>
+            <div class="check-box">
+                <input type="checkbox" class="check-button">
+                <label>I accept the term and conditions</label>
+            </div>
+            <button class="btn">Log in</button>
+        </form>
+    </div>
+</body>
+
+</html>
