@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --secondary-color: rgb(255, 255, 255);
+    --secondary-color-1: rgb(200, 200, 200);
+    --secondary-color-2: rgb(180, 180, 180);
+    --secondary-color-3: rgb(150, 150, 150);
+    --secondary-color-4: rgb(110, 110, 110);
+    
+    --primary-color-3: rgb(40, 40, 40);
+    --primary-color-2: rgb(30, 30, 30);
+    --primary-color-1: rgb(20, 20, 20);
+    --primary-color: rgb(5, 5, 5);
+
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+    --hover-color: gray;
+}
+
+#header{
+    font-family: roboto-regular;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "main main main";
+    height: 100vh;
+    align-items: end;
+}
+
+#navbar{
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu menu";
+    background-color: var(--primary-color);
+    position: fixed;
+    height: 8vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    grid-area: logo;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    padding-left: 10em;
+}
+
+.logo-pic{
+    height: 3.5rem;
+}
+
+.menu{
+    grid-area: menu;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(4, auto);
+    align-content: center;
+    padding-right: 100px;
+    gap: 55px;
+}
+
+.menu-items{
+    list-style: none;
+}
+
+.menu-items > a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+}
+
+.menu-items > a:hover{
+    color: var(--hover-color);
+    transition: 0.3s;
+}
+
+#home{
+    grid-area: main;
+    background: url(imgs/home-bg.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    height: calc(100vh - 8vh);
+    color: var(--secondary-color);
+    display: grid;
+    align-content: center;
+    margin-top: 0;
+    padding-left: 8em;
+}
+
+.home-content{
+    font-family: var(--primary-font);
+    width: 50%;
+    display: grid;
+    gap: 1em;
+}
+
+.home-content > h2{
+    font-size: 3.5em;
+    margin: 0.1em 0;
+}
+
+.home-content > h1{
+    font-size: 4.5em;
+    line-height: 85px;
+}
+
+.home-content > h1 > b{
+    background-color: var(--primary-color);
+}
+
+.home-content > p{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.home-content > button{
+    background-color: var(--primary-color);
+    font-size: 1.5em;
+    height: 65px;
+    width: 280px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.home-content > button:hover{
+    background: radial-gradient(circle, rgb(150, 150, 150) 0%, rgb(120, 120, 120) 25%, rgb(90, 90, 90) 50%, rgb(60, 60, 60) 75%, rgba(30,30,30) 100%);
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-content > button > a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#products{
+    height: 155vh;
+    background-color: var(--primary-color-3);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.main-heading{
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 4em;
+}
+
+.products-container{
+    background-color: rgb(70, 70, 70);
+    font-family: var(--secondary-font);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 80vw;
+    height: 135vh;
+}
+
+.product{
+    background-color: var(--primary-color-2);
+    color: var(--secondary-color);
+    height: 35em;
+    width: 25em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-img-1{
+    background: url(imgs/perfume-1.jpg) no-repeat center;
+}
+
+.product-img-2{
+    background: url(imgs/perfume-2.jpg) no-repeat center;
+}
+
+.product-img-3{
+    background: url(imgs/perfume-3.jpg) no-repeat center;
+}
+
+.product-img-4{
+    background: url(imgs/perfume-4.jpg) no-repeat center;
+}
+
+.product-img-5{
+    background: url(imgs/perfume-5.jpg) no-repeat center;
+}
+
+.product-img-6{
+    background: url(imgs/perfume-6.jpg) no-repeat center;
+}
+
+.product-img{
+    margin: 5px;
+    height: 24em;
+    width: 24em;
+    background-size: 24em;
+    display: grid;
+    justify-content: end;
+    align-content: end;
+}
+
+.product-img:hover{
+    transition: 0.5s;
+    background-size: 30em;
+}
+
+.like{
+    transition: 0.5s;
+    margin: 10px 15px;
+    padding: 5px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.like:hover{
+    margin: 15px 20px;
+    cursor: pointer;
+    height: 35px;
+
+}
+
+.product-name{
+    font-size: 25px;
+}
+
+.product-price{
+    font-size: 25px;
+}
+
+.add-to-bag{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    border: none;
+}
+
+.add-to-bag:hover{
+    background-color: var(--hover-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#about{
+    height: 100vh;
+    background-color: var(--primary-color-2);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 50px;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+.main-content{
+    font-size: 1.5em;
+    width: 80vw;
+}
+
+.sub-content{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+}
+
+.about-container{
+    background-color: rgb(50, 50, 50);
+    width: 400px;
+    height: 500px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    font-size: 1em;
+    padding: 28px;
+    gap: 35px;
+}
+.para{
+    color: var(--secondary-color-2);
+}
+
+#contact{
+    background-color: var(--primary-color-3);
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    gap: 50px;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.contact-content{
+    width: 30vw;
+    height: 500px;
+    display: grid;
+    align-content: center;
+    gap: 50px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 65px 230px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon{
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 65px;
+}
+
+.icon > img{
+    height: 35px;
+    width: 35px;
+}
+
+.text > h2{
+    color: var(--secondary-color-3);
+}
+
+.contact-form{
+    background-color: rgb(60, 60, 60);
+    padding: 40px;
+    width: 35vw;
+    height: 45vh;
+    display: grid;
+    align-content: center;
+}
+
+.contact-form h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.contact-form .input-box{
+    position: relative;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    background-color: rgb(60, 60, 60);
+    color: var(--secondary-color-1);
+    outline: none;
+    resize: none;
+}
+
+.contact-form .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: var(--secondary-color-3);
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+    color: var(--secondary-color);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]{
+    width: 100%;
+    background: var(--secondary-color-4);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact-form .input-box input[type="submit"]:hover{
+    background: var(--secondary-color-3);
+    color: var(--primary-color);
+}
+
+#footer{
+    height: 35vh;
+    background-color: var(--primary-color-1);
+    display: grid;
+    justify-items: center;
+    font-family: var(--primary-font);
+    grid-template-rows: 1fr 1fr 5vh;
+}
+
+.social-icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.icons{
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    background: var(--secondary-color);
+    display: grid;
+    border-radius: 50%;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-icon{
+    width: 50px;
+}
+
+.nav-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.link > a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.3em;
+    display: grid;
+    justify-content: center;
+}
+
+.license{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+}
