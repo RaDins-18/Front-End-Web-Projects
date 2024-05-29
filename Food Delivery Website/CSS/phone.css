@@ -1,0 +1,136 @@
+/* ====================================== Navigation ======================================== */
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#navbar ul li a{
+    margin: 0px 8px;
+    padding: 0px 4px;
+}
+
+.nav-btn{
+    font-size: 0.8rem;
+}
+
+/* ==================================== Section: Home ======================================= */
+
+#home{
+    height: 500px;
+    padding: 10px;
+}
+
+#home h1{
+    font-size: 2rem;
+    padding: 15px;
+}
+
+#home p{
+    font-size: 1rem;
+}
+
+.btn{
+    font-size: 0.8rem;
+    padding: 4px 15px;
+}
+
+/* ================================== Section: Services ===================================== */
+
+#services h1{
+    font-size: 1.8rem;
+    padding: 20px 0px 10px 0px;
+}
+
+.services-container{
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.services-box{
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.services-box img{
+    height: 60px;
+}
+
+.services-box h2{
+    font-size: 1rem;
+}
+
+.services-box p{
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+/* =================================== Section: Clients ===================================== */
+
+#client h1{
+    font-size: 1.8rem;
+    padding: 20px 0px 10px 0px;
+}
+
+.client-container{
+    flex-wrap: wrap;
+}
+
+.client-box{
+    height: 80px;
+    width: 80px;
+    padding: 0px;
+    margin: 10px;
+}
+
+.client-box img{
+    height: 60px;
+}
+
+/* =================================== Section: Contact ===================================== */
+
+#contact h1{
+    font-size: 1.8rem;
+    padding: 20px 0px 10px 0px;
+}
+
+.contact-container{
+    flex-wrap: wrap;
+}
+
+.contact-box{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.contact-box label{
+    font-size: 1rem;
+    margin: 3px 0px;
+}
+
+.contact-box input{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.contact-box textarea{
+    font-size: 0.8rem;
+    padding: 5px;
+    min-width: 150px;
+    max-width: 290px;
+    min-height: 25px;
+    max-height: 50px;
+}
+
+/* ======================================== footer ========================================== */
+
+footer{
+    font-size: 0.8rem;
+    height: 15px;
+}
