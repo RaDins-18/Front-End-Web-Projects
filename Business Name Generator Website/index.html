@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name Generator Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Business Name Generator</h1>
+        <div class="box">
+            <div>
+                <input type="text" id="category" placeholder="Business Categorie Like (medicines, foods, garments)" onkeydown="return /[a-zA-Z]/i.test(event.key)" autofocus>
+                <input type="button" id="submit" onclick="get_name_add_name()" value="Submit">
+            </div>
+            <h2 id="business_name"></h2>
+        </div>
+    </div>
+    <div class="container_filter"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
