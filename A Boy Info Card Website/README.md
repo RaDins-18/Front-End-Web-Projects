@@ -1,3 +1,10 @@
 # A Boy Info Card Website
 
-![Alt text](OUTPUT.png)
+# CODE
+
+![Alt text](README-IMGS/README.png)
+![Alt text](README-IMGS/README-1.png)
+
+# OUTPUT
+
+![Alt text](README-IMGS/OUTPUT.png)
